@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Download Mp3 Music</string>
+    <string name="artis_name">#mp3chart #topmusic #freemusic #musichits</string>
+    <string name="buttonname">Start App</string>
+    <string name="json">http://dodi.marmud.com/2019/siskiapp/downloadmp3music.json</string>
+    <string name="api">https://api-v2.soundcloud.com</string>
+
+    <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+    <string name="appid">ca-app-pub-5477223151700785~4068448814</string>
+    <string name="disclaimerfront"><b>Notice:</b>
+        This application uses of the SoundCloud API, please see their API Terms of Use(https://developers.soundcloud.com/docs/api/terms-of-use). All the songs, which are available through this application, is intended only for the use of your personal non-commercial use, you can see Privacy Policy SoundCloud(https://soundcloud.com/pages/privacy). Please read our Privacy Policy for detail.
+\n\n
+        <b>Disclaimer:</b>
+        All trademarks and copyrights belong to their respective owners and are used here under the terms of Fair Use and the Digital Millennium Copyrights Act (DMCA).
+        </string>
+</resources>

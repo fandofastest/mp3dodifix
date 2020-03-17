@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmain"
+    tools:context=".SiskiAppOfflineActivity">
+
+    <SearchView
+        android:id="@+id/searchViewOffline"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:visibility="visible"
+        android:background="@drawable/round_bg_srch"
+        android:layout_margin="5dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchViewOffline"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_above="@id/banner"/>
+
+    <TextView
+        android:id="@+id/noSong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_below="@id/searchViewOffline"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorAccent"
+        android:text="Sorry, there is no song downloaded.\nYour downloaded song is appear here."/>
+
+    <RelativeLayout
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

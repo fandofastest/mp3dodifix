@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/listArea"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/trackImgOffline"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/trackTitleOffline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:maxLines="2"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_toRightOf="@id/trackImgOffline"
+        android:layout_marginLeft="10dp"
+        android:text="Song Title Here "/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/actionAreaOffline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4A96B9C1"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/listArea"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/miniplayer_play"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_play_circle"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/miniplayer_rate"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_favorite"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d2d2d2"
+        android:layout_below="@+id/actionAreaOffline"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>

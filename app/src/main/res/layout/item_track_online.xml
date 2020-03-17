@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/listArea"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+    <ImageView
+        android:id="@+id/trackImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#565656"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/textArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/trackImg"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/trackTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:maxLines="1"
+            android:text="Song Title Here "/>
+
+        <TextView
+            android:id="@+id/trackArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:text="Artist Name"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_favorite"/>
+
+            <TextView
+                android:id="@+id/txt_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_time"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/txt_dur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/actionAreaOnline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#4A96B9C1"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_below="@id/listArea"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/miniplayer_play"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_play_circle"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/miniplayer_rate"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_favorite"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d2d2d2"
+        android:layout_below="@id/actionAreaOnline"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
